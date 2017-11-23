@@ -4,7 +4,7 @@
 <head>
 <title> Page Title </title>
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
 
 <script  src="js/jquery-3.2.1.min.js" type="text/javascript" ></script>
@@ -13,17 +13,129 @@
 
 <script src="css/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
+<style>
+body {
+	
+	background-color: #87CEFA;
+	font-family: arial;
+	color: black;
+	}
+hr{
+ border-width: 5px;
+
+}
+
+
+
+</style>
+
 </head>
 
 
 <body>
-<p class="main" id="techstitution"> Techstitution </p>
 
+<h3> Forma per regjistrimin e pikave kufitare</h3>
 
-<form>
+<form class="horizontal">
 
+<hr>
+  <div class="form-group">
+     
+      <label  class="col-sm-1"for="pika-kufitare">Pika kufitare:</label>
+	 <div class="col-sm-2">
+	 
+       <select class="form-control" name="pika-kufitare">
+	     <option disabled selected>Zgjedhni piken kufitare</option>
+	     <option>Vërmicë</option>
+         <option>Qafë e Prushit</option>
+         <option>Qafë e Morinës</option>
+         <option>Kullë</option>
+		 <option>Bërnjak</option>
+		 <option>Jarinje</option>
+		 <option>Merdarë</option>
+		 <option>Mutivodë</option>
+		 <option>Dheu i bardhë</option>
+		 <option>Muçibabë</option>
+		 <option>Hani i Elezit</option>
+		 <option>Glloboqicë</option>
+		 
+	    </select>
+     </div>
+  </div>
+  <br>
+<br> 
+<hr>
+<br>
+<h4>Hyrje</h4>
+
+<div class="form-group ">
+   <label class="col-sm-1" for="hyrje-min">Mininmum</label> 
+   <input  class="col-sm-1" type="text" id="hyrje-min" > minuta
+   
+</div>
+
+   
+<div class="form-group ">
+   <label class="col-sm-1" for="hyrje-max">Maximum</label> 
+   <input  class="col-sm-1" type="text" id="hyrje-max" > minuta
+</div>   
+ 
+ <h4>Dalje</h4>
+ 
+ <div class="form-group ">
+   <label class="col-sm-1" for="dalje-min">Mininmum</label> 
+   <input  class="col-sm-1" type="text" id="dalje-min" > minuta
+</div>
+   
+<div class="form-group ">
+   <label class="col-sm-1" for="dalje-max">Maximum</label> 
+   <input  class="col-sm-1" type="text" id="dalje-max" > minuta
+</div>
+ 
+ <br>
+ <hr>
+ <br>
+ <h4>Hyrje</h4>
+
+<div class="form-group ">
+   <label class="col-sm-1" for="hyrje-min*">Mininmum</label> 
+   <input  class="col-sm-1" type="text" id="hyrje-min*" > metra
+   
+</div>
+
+   
+<div class="form-group ">
+   <label class="col-sm-1" for="hyrje-max*">Maximum</label> 
+   <input  class="col-sm-1" type="text" id="hyrje-max*" > metra
+</div>   
+ 
+ <h4>Dalje</h4>
+ 
+ <div class="form-group ">
+   <label class="col-sm-1" for="dalje-min*">Mininmum</label> 
+   <input  class="col-sm-1" type="text" id="dalje-min*" > metra
+</div>
+   
+<div class="form-group ">
+   <label class="col-sm-1" for="dalje-max*">Maximum</label> 
+   <input  class="col-sm-1" type="text" id="dalje-max*" >
+   <label  class="col-sm-1" for="metra">metra</label>
+</div>
+
+ 
+<br>
+<br>
+<div class="form-group col-xs-3" >
+ <input type="button" value="Dergo">
+ <input type="button" value="Fshij">
+</div> 
+
+ 
+ 
+ 
 </form>
 
+  
 
 </body>
 

@@ -1,4 +1,4 @@
-.main{
+/*.main{
 	background-color:DodgerBlue;
 }
 #techstitution{
@@ -6,4 +6,11 @@
 }
 #grupi{
 	font-family:bold;
+}
+*/
+.body {
+	
+	background-color: blue;
+	font-family: arial;
+	
 }

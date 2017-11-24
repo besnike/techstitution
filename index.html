@@ -33,21 +33,23 @@ hr{
 
 
 <body>
-
+<div class="container-fluid"> 
+<!--<div class="row">
+<div class="col-xs-offset-3 col-xs-8"> -->
 <h3> Forma per regjistrimin e pikave kufitare</h3>
 
-<form class="horizontal">
+<form class="form-horizontal" id="border-wait-form">
 
 <hr>
   <div class="form-group">
      
-      <label  class="col-sm-1"for="pika-kufitare">Pika kufitare:</label>
+      <label  class="col-sm-1"for="pika-kufitare" >Pika kufitare:</label>
 	 <div class="col-sm-2">
 	 
-       <select class="form-control" name="pika-kufitare">
+       <select class="form-control" name="pika-kufitare" id="pika-kufitare">
 	     <option disabled selected>Zgjedhni piken kufitare</option>
-	     <option>Vërmicë</option>
-         <option>Qafë e Prushit</option>
+	     <option value="vermice">Vërmicë</option>
+         <option value="qafe-e-prushit">Qafë e Prushit</option>
          <option>Qafë e Morinës</option>
          <option>Kullë</option>
 		 <option>Bërnjak</option>
@@ -68,28 +70,30 @@ hr{
 <br>
 <h4>Hyrje</h4>
 
-<div class="form-group ">
-   <label class="col-sm-1" for="hyrje-min">Mininmum</label> 
-   <input  class="col-sm-1" type="text" id="hyrje-min" > minuta
+<div class="form-group form-style-group"><!--class="form-style-group"per mos me i ndryshu klasat  e bootstrap-it, por me mujt me bo ndryshime vetem ne klasat tua -->
+   <label class="col-sm-1" for="hyrje-min-minuta">Minimum</label> 
+   <input  class="col-sm-1" type="text" name="hyrje-min-minuta"id="hyrje-min-minuta" > minuta
    
 </div>
 
    
 <div class="form-group ">
-   <label class="col-sm-1" for="hyrje-max">Maximum</label> 
-   <input  class="col-sm-1" type="text" id="hyrje-max" > minuta
+   <label class="col-sm-1" for="hyrje-max-minuta">Maximum</label> 
+   <input  class="col-sm-1" type="text"name="hyrje-max-minuta" id="hyrje-max-minuta" > minuta
 </div>   
  
  <h4>Dalje</h4>
  
  <div class="form-group ">
-   <label class="col-sm-1" for="dalje-min">Mininmum</label> 
-   <input  class="col-sm-1" type="text" id="dalje-min" > minuta
+   <label class="col-sm-1" for="dalje-min-minuta">Minimum</label> 
+   <input  class="col-sm-1" type="text" name="dalje-min-minuta" id="dalje-min-minuta" >minuta
+ 
 </div>
+      
    
 <div class="form-group ">
-   <label class="col-sm-1" for="dalje-max">Maximum</label> 
-   <input  class="col-sm-1" type="text" id="dalje-max" > minuta
+   <label class="col-sm-1" for="dalje-max-minuta">Maximum</label> 
+   <input  class="col-sm-1" type="text" name="dalje-max-minuta" id="dalje-max-minuta" > minuta
 </div>
  
  <br>
@@ -98,27 +102,27 @@ hr{
  <h4>Hyrje</h4>
 
 <div class="form-group ">
-   <label class="col-sm-1" for="hyrje-min*">Mininmum</label> 
-   <input  class="col-sm-1" type="text" id="hyrje-min*" > metra
+   <label class="col-sm-1" for="hyrje-min-metra">Mininmum</label> 
+   <input  class="col-sm-1" type="text" name="hyrje-min-metra" id="hyrje-min-metra" > metra
    
 </div>
 
    
 <div class="form-group ">
-   <label class="col-sm-1" for="hyrje-max*">Maximum</label> 
-   <input  class="col-sm-1" type="text" id="hyrje-max*" > metra
+   <label class="col-sm-1" for="hyrje-max-metra">Maximum</label> 
+   <input  class="col-sm-1" type="text" name="hyrje-max-metra" id="hyrje-max-metra" > metra
 </div>   
  
  <h4>Dalje</h4>
  
  <div class="form-group ">
-   <label class="col-sm-1" for="dalje-min*">Mininmum</label> 
-   <input  class="col-sm-1" type="text" id="dalje-min*" > metra
+   <label class="col-sm-1" for="dalje-min-metra">Minimum</label> 
+   <input  class="col-sm-1" type="text" name="dalje-min-metra"id="dalje-min-metra" > metra
 </div>
    
 <div class="form-group ">
-   <label class="col-sm-1" for="dalje-max*">Maximum</label> 
-   <input  class="col-sm-1" type="text" id="dalje-max*" >
+   <label  class="col-sm-1" for="dalje-max-metra">Maximum</label> 
+   <input  class="col-sm-1" type="text" name="dalje-max-metra" id="dalje-max-metra" >
    <label  class="col-sm-1" for="metra">metra</label>
 </div>
 
@@ -126,8 +130,10 @@ hr{
 <br>
 <br>
 <div class="form-group col-xs-3" >
- <input type="button" value="Dergo">
- <input type="button" value="Fshij">
+<button type="submit" >Dergo</botton>
+<!-- <input type="button" value="Dergo">
+ <input type="button" value="Fshij"> -->
+ 
 </div> 
 
  
@@ -136,7 +142,9 @@ hr{
 </form>
 
   
-
+</div>
+<!--</div>
+</div>  -->
 </body>
 
 </html>
